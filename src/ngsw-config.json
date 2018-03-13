@@ -15,17 +15,17 @@
       ]
     }
   }, {
-    "name": "assets",
-    "installMode": "lazy",
-    "updateMode": "prefetch",
-    "resources": {
-      "files": [
-        "/assets/**"
+  "name": "assets",
+  "installMode": "lazy",
+  "updateMode": "prefetch",
+  "resources": {
+    "files": [
+      "/assets/**"
       ],
       "urls": [
         "https://fonts.googleapis.com/icon?family=Material+Icons",
         "https://fonts.googleapis.com/css?family=Open+Sans:400,700"
       ]
-    }
+  }
   }]
 }

@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  assets: 'http://eskinder.net/assets/'
+  assets: 'http://www.eskinder.net/assets/'
 };

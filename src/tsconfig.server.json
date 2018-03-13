@@ -10,10 +10,10 @@
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-    ],
-    // Add "angularCompilerOptions" with the AppServerModule you wrote
-    // set as the "entryModule".
-    "angularCompilerOptions": {
-      "entryModule": "app/app.server.module#AppServerModule"
-    }
+  ],
+  // Add "angularCompilerOptions" with the AppServerModule you wrote
+  // set as the "entryModule".
+  "angularCompilerOptions": {
+    "entryModule": "app/app.server.module#AppServerModule"
+  }
 }

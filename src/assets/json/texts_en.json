@@ -16,15 +16,12 @@
     "name": "EDUCATION",
     "link": "education"
     },{
-    "name": "CONFERENCES ATTENDED",
-    "link": "conferences"
-    },{
     "name": "CONTACT ME",
     "link": "contact"
     }
   ],
   "video" : {
-    "title": "Eskinder Gezahagne",
+    "title": "Eskinder G. Gezahagne",
     "subtitle": "Front End Developer ( Web / Front-End )"
   },
   "about" : {
@@ -138,6 +135,7 @@
       },{
       "title": "Help!!!",
       "subtitle": "2011",
+      "subtitle": "2011",
       "img": "bg-help"
       },{
       "title": "Thesis",
@@ -154,8 +152,8 @@
         "title": "2013-2014",
         "paragraph": "Developed webisites using WordPress, OpenCart and other opensource technologies"
       },{
-      "title": "2014",
-      "paragraph": "Solely Developed a web application used as a Service Management tool by Media Ram and Media Markt (one of Europe’s largest retailer of consumer electronics)."
+      "title": "2016",
+      "paragraph": "Participated on OAuth implementation for user roles and permissions using JWT (JSON web token)"
       },{
       "title": "2008",
       "paragraph": "Presented my thesis on a new data compression algorithm in the 2nd Panhellenic Conference of Computer Science in Samos called “Eureka”, which was acknowledged for its efficiency."
@@ -170,7 +168,7 @@
         "subtitle":"Front End (Angular), Elance",
         "year":"May 2017 - PRESENT",
         "intro": [
-          "Freelance INTRO"
+          "Freelance"
         ],
         "elements":[
           {
@@ -183,7 +181,7 @@
               "Created custom NPM modules.",
               "Developed administrative UI Components using Angular2, Typescript and Webpack",
               "Used Bootstrap for Responsive Web design.",
-              "Optimized Frontend assets for speed and performance",
+              "Optimized Front End assets for speed and performance",
               "Used Middleware, Redux-Promise in application to retrieve data from Back-End and to also perform RESTFUL services.",
               "Created custom Angular Components including Breadcrumbs, Reactive Forms, Form Validators, Tabbed Components and Toggle Buttons.",
               "Proficient in Java, including Spring Boot/Spring MVC and REST Web Services"
@@ -196,7 +194,7 @@
       "subtitle":"Front End, Nuaxis.",
       "year":"Aug 2016 - Feb 2017",
       "intro": [
-        "Nuaxis Intro"
+        "Nuaxis"
       ],
       "elements":[
         {
@@ -231,20 +229,17 @@
       "subtitle":"Full-Stack Software Developer & Designer",
       "year":"JUL 2014 - JUN 2016",
       "intro": [
-        "Developed and Designed Websites using Wordpress and opensource technologies such as wordpress, laravel and opencart"
+        ""
       ],
       "elements" : [
         {
           "type":"list",
           "header":"Key Responsibilities include but not limited to:",
           "list": [
-            "-----------------------------------",
-            "--------------------------------------",
-            "-----------------------------------------------------------",
-            "--------------------------------------------------",
-            "------------------------------------------------------------------------------------------",
-            "------------------------------------------------------",
-            "----------------------------------------------------------------"
+            "Created websites using open source technologies.",
+            "Developed and implemented mobile device responsive UI designs and back-end analytics tracking for company website",
+            "Maintained website for most up-to date technology, software, and information",
+            "Customized, Implemented custom WordPress themes and plugins."
           ]
         }
       ],
