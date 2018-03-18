@@ -10,7 +10,7 @@ import { AboutModule, ContactModule, EducationConferencesModule, ExperienceModul
 
 
 @NgModule({
-  imports: [ CommonModule, FlexLayoutModule, FormsModule, 
+  imports: [ CommonModule, FlexLayoutModule, FormsModule,
     AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, ProjectsModule,
     RouterModule.forChild([
       {
