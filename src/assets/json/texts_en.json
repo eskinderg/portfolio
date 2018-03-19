@@ -298,9 +298,11 @@
     "input": [
       "NAME","EMAIL","MESSAGE"
     ],
+    "mail":"eskinderget@gmail.com",
+    "phone":"703-509-3312",
     "button":"Send message"
   },
   "footer": {
-    "content": "All righs reserved. Copyrights 2018"
+    "content": "2018"
   }
 }
