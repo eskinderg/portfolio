@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  assets: 'http://www.eskinder.net/assets/'
+  lang: '/assets/json/texts_en_min.json'
 };

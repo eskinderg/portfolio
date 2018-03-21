@@ -266,23 +266,23 @@
           ]
         }
       ],
-      "used":["C#", "MSSQL","ASP .Net","ASP MVC","LINQ","Entity Framework","Photoshop", "PHP","HTML5", "CSS3", "Javascript", "jQuery"]
+      "used":["C#", "MSSQL","ASP.Net","ASP.NET MVC","LINQ","Entity Framework","Photoshop", "PHP","HTML5", "CSS3", "Angular","JavaScript", "jQuery"]
       }
     ]
   },
   "education": {
-    "title": "EDUCATION",
+    "title": "EDUCATION \\ TRAININGS",
     "content": [
       {
-        "title": "Bachelor Degree in Computer Science & Information Technology",
-        "subtitle": "Arba Minch University, Addis Ababa, Ethiopia",
+        "title": "B.Sc in Computer Science & Information Technology",
+        "subtitle": "Arba Minch University, Arba Minch, Ethiopia",
         "year": "2004 - 2008"
       },{
       "title": "Microsoft Certified C# Specialist",
       "subtitle": "Microsoft",
       "year": "2015"
       },{
-      "title": "Microsot Certified Professional (MCP) ",
+      "title": "Microsoft Certified Professional (MCP) ",
       "subtitle": "Microsoft",
       "year": "2015"
       }
@@ -303,6 +303,6 @@
     "button":"Send message"
   },
   "footer": {
-    "content": "2018"
+    "content": "2018 \u00A9"
   }
 }

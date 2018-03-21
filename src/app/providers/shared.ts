@@ -21,7 +21,7 @@ export class Shared {
   }
 
   getTexts(){
-    return this.http.get(environment.assets + 'json/texts_en.json');
+    return this.http.get(environment.lang);
   };
 
 
