@@ -12,11 +12,11 @@ export class App implements OnInit{
   constructor(public portfolio: Shared, public ref: ChangeDetectorRef, public meta: Meta){
     this.meta.addTags([
       {name: 'og:title', content: 'Eskinder | Profile'},
-      {name: 'og:description', content: 'Hello, my name is Eskinder Gezahagne. I am a Web Developer ( Web / FE - Angular ) and this is my portfolio page.'},
+      {name: 'og:description', content: 'Hello, my name is Eskinder Gezahagne. I am a Web Developer ( Web / FE - Angular ) and this is my portfolio page. As confirmed by my portfolio content and code, I combine my knowledge, experience and skills with technology in order to develop professional and innovative web applications using open source technologies'},
       {name: 'og:image', content: '/assets/img/social-min.png'},
-      {name: 'author', content: 'eskinder'},
-      {name: 'keywords', content: 'Angular, Portfolio, eskinder, Gezahagne, Getahun'},
-      {name: 'description', content: 'Hello, my name is Eskinder Gezahagne. I am a Web Developer ( Web / FE - Angular ) and this is my portfolio page.'}
+      {name: 'author', content: 'Eskinder'},
+      {name: 'keywords', content: 'Angular, Web, Frontend, Developer, Portfolio, Eskinder, Gezahagne, Getahun'},
+      {name: 'description', content: 'Hello, my name is Eskinder Gezahagne. I am a Web Developer ( Web / FE - Angular ) and this is my portfolio page. As confirmed by my portfolio content and code, I combine my knowledge, experience and skills with technology in order to develop professional and innovative web applications using open source technologies'}
     ]);
   }
   ngOnInit(){
