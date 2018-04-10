@@ -13,7 +13,7 @@ import { AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, Educ
 import { scrollTrigger } from './providers/scrollTrigger';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { TransferHttpCacheModule } from '@nguniversal/common';
-
+import { BaBackTopModule } from './components/babacktop/babacktop.module';
 /*
 import { RouterModule } from '@angular/router';
 import { Routing } from './app.routes';
@@ -41,6 +41,7 @@ export class RavenErrorHandler implements ErrorHandler {
       BrowserTransferStateModule,
       BrowserAnimationsModule,
       HttpClientModule,
+      BaBackTopModule,
       //RouterModule.forRoot( Routing ),
       MenuModule, VideoModule,
       AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, ProjectsModule,
