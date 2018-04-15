@@ -1,12 +1,15 @@
 import { Component, ViewChild, HostListener, Input, ElementRef, AfterViewInit } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material';
 import * as jQuery from 'jquery';
 
 @Component({
   selector: 'back-top',
   styleUrls: ['./baBackTop.scss'],
   template: `
-  <i #baBackTop class="ba-back-top" title="Back to Top"><mat-icon>arrow_upward</mat-icon></i>
-    `
+    <i #baBackTop class="ba-back-top" title="Back to Top">
+      <mat-icon>arrow_upward</mat-icon>
+    </i>
+  `
 })
 export class BaBackTopComponent implements AfterViewInit {
 
@@ -15,6 +18,7 @@ export class BaBackTopComponent implements AfterViewInit {
   @Input() moveSpeed = 1000;
 
   @ViewChild('baBackTop') _selector: ElementRef;
+  // @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 
   ngAfterViewInit (): void {
     this._onWindowScroll();
@@ -31,4 +35,26 @@ export class BaBackTopComponent implements AfterViewInit {
     const el = this._selector.nativeElement;
     window.scrollY > this.position ? jQuery(el).fadeIn(this.showSpeed) : jQuery(el).fadeOut(this.showSpeed);
   }
+
+  // <button mat-icon-button [matMenuTriggerFor]="appMenu">
+  //   <mat-icon>more_vert</mat-icon>
+  // </button>
+  // <mat-menu #appMenu="matMenu">
+  //   <button mat-menu-item>Settings</button>
+  //   <button mat-menu-item>Help</button>
+  // </mat-menu>
+
+
+  // @HostListener('mouseover')
+  // _onHover(): boolean {
+  //   this.trigger.openMenu();
+  //   return false;
+  // }
+
+  // @HostListener('mouseout')
+  // _onMouseOut(): boolean {
+  //   this.trigger.closeMenu();
+  //   return false;
+  // }
+
 }

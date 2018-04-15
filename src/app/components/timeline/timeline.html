@@ -7,7 +7,7 @@
         <!-- <div *ngFor="let paragraph of job.intro" class="paragraph">{{ paragraph }}</div> -->
         <div *ngFor="let list of job.elements">
             <h5>{{list.header}}</h5>
-            <div style="font-size:12px;margin-top:10px;" *ngFor="let l of list.list">  {{l}} </div>
+            <div class="experienceList" *ngFor="let l of list.list">  {{l}} </div>
         </div>
         <!-- {{job.elements | json}} -->
         <!-- <hr> -->

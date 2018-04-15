@@ -28,16 +28,53 @@
 .bg-booknbloom, .bg-gmglass, .bg-help, .bg-inrealty, .bg-media-ram,
 .bg-orco, .bg-sonon, .bg-streaming, .bg-swinburne, .bg-tapitright,
 .bg-thesis
-{ max-width: 100%; background-size: 100%; background-image: url('/assets/img/projects-min.png'); }
+{
+  max-width: 100%;
+  background-size: 100%;
+  background-image: url('/assets/img/projects-min.png');
+}
 
-.bg-booknbloom { background-position: 0 0%; background-size: 100%; }
-.bg-gmglass { background-position: 0 10%; background-size: 100%; }
-.bg-help { background-position: 0 20%; background-size: 100%; }
-.bg-inrealty { background-position: 0 30%; background-size: 100%; }
-.bg-media-ram { background-position: 0 40%; background-size: 100%; }
-.bg-orco { background-position: 0 50%; background-size: 100%; }
-.bg-sonon { background-position: 0 60%; background-size: 100%; }
-.bg-streaming { background-position: 0 70%; background-size: 100%; }
-.bg-swinburne { background-position: 0 80%; background-size: 100%; }
-.bg-tapitright { background-position: 0 90%; background-size: 100%; }
-.bg-thesis { background-position: 0 100%; background-size: 100%; }
+.bg-booknbloom {
+  background-position: 0 0%;
+  background-size: 100%;
+}
+.bg-gmglass {
+  background-position: 0 10%;
+  background-size: 100%;
+}
+.bg-help {
+  background-position: 0 20%;
+  background-size: 100%;
+}
+.bg-inrealty {
+  background-position: 0 30%;
+  background-size: 100%;
+}
+.bg-media-ram {
+  background-position: 0 40%;
+  background-size: 100%;
+}
+.bg-orco {
+  background-position: 0 50%;
+  background-size: 100%;
+}
+.bg-sonon {
+  background-position: 0 60%;
+  background-size: 100%;
+}
+.bg-streaming {
+  background-position: 0 70%;
+  background-size: 100%;
+}
+.bg-swinburne {
+  background-position: 0 80%;
+  background-size: 100%;
+}
+.bg-tapitright {
+  background-position: 0 90%;
+  background-size: 100%;
+}
+.bg-thesis {
+  background-position: 0 100%;
+  background-size: 100%;
+}

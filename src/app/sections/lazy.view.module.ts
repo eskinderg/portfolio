@@ -5,13 +5,31 @@ import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LazyView } from './lazy.view';
 
-import { AboutModule, ContactModule, EducationConferencesModule, ExperienceModule, VideoModule, ProjectsModule, ExpertinModule, AccomplishmentsModule } from '.';
+import {
+  AboutModule,
+  ContactModule,
+  EducationConferencesModule,
+  ExperienceModule,
+  VideoModule,
+  ProjectsModule,
+  ExpertinModule,
+  AccomplishmentsModule
+} from '.';
 
 
 
 @NgModule({
-  imports: [ CommonModule, FlexLayoutModule, FormsModule,
-    AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, ProjectsModule,
+  imports: [
+    CommonModule,
+    FlexLayoutModule,
+    FormsModule,
+    AboutModule,
+    ExpertinModule,
+    ContactModule,
+    AccomplishmentsModule,
+    EducationConferencesModule,
+    ExperienceModule,
+    ProjectsModule,
     RouterModule.forChild([
       {
         path: '',
