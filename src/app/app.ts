@@ -23,7 +23,7 @@ export class App implements OnInit{
     if(!this.portfolio.texts){
       this.portfolio.getTexts().subscribe(
         data => {
-          console.log(data);
+          // console.log(data);
           this.portfolio.texts = data;
           this.ref.detectChanges();
         },

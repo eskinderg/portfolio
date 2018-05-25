@@ -276,14 +276,17 @@
       {
         "title": "B.Sc in Computer Science & Information Technology",
         "subtitle": "Arba Minch University, Arba Minch, Ethiopia",
+        "img": "bg-angular",
         "year": "2004 - 2008"
       },{
       "title": "Microsoft Certified C# Specialist",
       "subtitle": "Microsoft",
+      "img": "bg-angular",
       "year": "2015"
       },{
       "title": "Microsoft Certified Professional (MCP) ",
       "subtitle": "Microsoft",
+      "img": "bg-angular",
       "year": "2015"
       }
     ]
@@ -299,7 +302,7 @@
       "NAME","EMAIL","MESSAGE"
     ],
     "mail":"eskinderget@gmail.com",
-    "phone":"703-509-3312",
+    "phone":"703 509 3312",
     "button":"Send message"
   },
   "footer": {

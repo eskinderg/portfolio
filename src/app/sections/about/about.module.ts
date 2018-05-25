@@ -7,7 +7,12 @@ import { MatButtonModule } from "@angular/material";
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
-  imports: [ CommonModule, MatButtonModule, FlexLayoutModule, TitleModule ],
+  imports: [
+    CommonModule,
+    MatButtonModule,
+    FlexLayoutModule,
+    TitleModule
+  ],
   declarations: [ AboutComponent ],
   exports:      [ AboutComponent ]
 })

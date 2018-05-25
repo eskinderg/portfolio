@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Shared } from '../../providers/shared';
-import {style, state, animate, transition, trigger} from '@angular/core';
+import {style, state, animate, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'component-menu',
