@@ -5,7 +5,7 @@ import { Component, Input} from '@angular/core';
   templateUrl: './list.html',
   styleUrls: ['./list.scss']
 })
-export class ListComponent{
+export class ListComponent {
   @Input() item;
   @Input() type;
 }

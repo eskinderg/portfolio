@@ -24,7 +24,6 @@ export class Shared {
     return this.http.get(environment.lang);
   };
 
-
   public texts;
   public loading = false;
   public sections = {};

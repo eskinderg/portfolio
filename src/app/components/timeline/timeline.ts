@@ -5,7 +5,7 @@ import { Component, Input} from '@angular/core';
   templateUrl: './timeline.html',
   styleUrls: ['./timeline.scss']
 })
-export class TimelineComponent{
+export class TimelineComponent {
   @Input() job;
   @Input() index;
 }
