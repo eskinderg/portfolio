@@ -3,7 +3,7 @@ import { MatMenuTrigger } from '@angular/material';
 import * as jQuery from 'jquery';
 
 @Component({
-  selector: 'back-top',
+  selector: 'app-back-top',
   styleUrls: ['./baBackTop.scss'],
   template: `
     <i #baBackTop class="ba-back-top" title="Back to Top">

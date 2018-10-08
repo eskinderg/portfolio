@@ -11,4 +11,4 @@ import { TitleModule } from '../../components/index';
   exports:      [ AccomplishmentsComponent ]
 })
 
-export class AccomplishmentsModule {};
+export class AccomplishmentsModule {}

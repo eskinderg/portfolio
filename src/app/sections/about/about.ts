@@ -3,7 +3,7 @@ import { Shared } from '../../providers/shared';
 
 
 @Component({
-  selector: 'section-about',
+  selector: 'app-section-about',
   templateUrl: './about.html',
   styleUrls: ['./about.scss']
 })
@@ -11,11 +11,11 @@ export class AboutComponent implements AfterViewInit {
 
   @ViewChild('about') aboutSection: ElementRef;
 
-  constructor(public portfolio:Shared){
+  constructor(public portfolio: Shared) {
 
   }
 
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     this.portfolio.sections['about'] = this.aboutSection;
   }
 

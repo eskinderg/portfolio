@@ -3,11 +3,11 @@ import { Shared } from './providers/shared';
 import { Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app',
+  selector: 'app-main',
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class App implements OnInit {
+export class AppComponent implements OnInit {
 
   constructor(public portfolio: Shared, public ref: ChangeDetectorRef, public meta: Meta) {
     this.meta.addTags([

@@ -3,7 +3,7 @@ import { Shared } from '../../providers/shared';
 
 
 @Component({
-  selector: 'section-accomplishments',
+  selector: 'app-section-accomplishments',
   templateUrl: './accomplishments.html',
   styleUrls: ['./accomplishments.scss']
 })
@@ -11,11 +11,9 @@ export class AccomplishmentsComponent implements AfterViewInit {
 
   @ViewChild('accomplishments') accomplishmentsSection: ElementRef;
 
-  constructor(public portfolio:Shared){
+  constructor(public portfolio: Shared) { }
 
-  }
-
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     this.portfolio.sections['accomplishments'] = this.accomplishmentsSection;
   }
 }

@@ -9,9 +9,9 @@ import * as express from 'express';
 import { join } from 'path';
 import { readFileSync } from 'fs';
 
-var mailer = require('./sendEmail');
+const mailer = require('./sendEmail');
 
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();

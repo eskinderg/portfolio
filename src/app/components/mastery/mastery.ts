@@ -5,6 +5,6 @@ import { Component, Input} from '@angular/core';
   templateUrl: './mastery.html',
   styleUrls: ['./mastery.scss']
 })
-export class MasteryComponent{
+export class MasteryComponent {
   @Input() item;
 }

@@ -3,7 +3,7 @@ import { Shared } from '../../providers/shared';
 
 
 @Component({
-  selector: 'section-experience',
+  selector: 'app-section-experience',
   templateUrl: './experience.html',
   styleUrls: ['./experience.scss']
 })
@@ -11,11 +11,9 @@ export class ExperienceComponent implements AfterViewInit {
 
   @ViewChild('experience') experienceSection: ElementRef;
 
-  constructor(public portfolio:Shared){
+  constructor(public portfolio: Shared) { }
 
-  }
-
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     this.portfolio.sections['experience'] = this.experienceSection;
   }
 }
