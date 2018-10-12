@@ -1,7 +1,7 @@
 import { Component, Input} from '@angular/core';
 
 @Component({
-  selector: 'component-timeline',
+  selector: 'app-component-timeline',
   templateUrl: './timeline.html',
   styleUrls: ['./timeline.scss']
 })

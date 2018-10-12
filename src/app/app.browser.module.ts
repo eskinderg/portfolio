@@ -19,7 +19,7 @@ import {
   VideoModule,
   ProjectsModule
 } from './sections/index';
-import { scrollTrigger } from './providers/scrollTrigger';
+import { ScrollTrigger } from './providers/scrollTrigger';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { TransferHttpCacheModule } from '@nguniversal/common';
 import { BaBackTopModule } from './components/babacktop/babacktop.module';
@@ -56,7 +56,7 @@ export class RavenErrorHandler implements ErrorHandler {
       AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, ProjectsModule,
       ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
     ],
-    providers: [ Shared , scrollTrigger,
+    providers: [ Shared , ScrollTrigger,
       // { provide: ErrorHandler, useClass: RavenErrorHandler }
     ],
     bootstrap: [ AppComponent ]

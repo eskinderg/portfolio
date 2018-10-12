@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { LazyView } from './lazy.view';
+import { LazyViewComponent } from './lazy.view';
 
 import {
   AboutModule,
@@ -33,11 +33,11 @@ import {
     RouterModule.forChild([
       {
         path: '',
-        component: LazyView
+        component: LazyViewComponent
       }])
   ],
-  declarations: [ LazyView ],
+  declarations: [ LazyViewComponent ],
   exports:      [ RouterModule ]
 })
 
-export class LazyViewModule {};
+export class LazyViewModule {}

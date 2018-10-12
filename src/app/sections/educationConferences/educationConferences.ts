@@ -11,9 +11,7 @@ export class EducationConferencesComponent implements AfterViewInit {
   @ViewChild('education') educationSection: ElementRef;
   @ViewChild('conferences') conferencesSection: ElementRef;
 
-  constructor(public portfolio: Shared) {
-
-  }
+  constructor(public portfolio: Shared) { }
 
   ngAfterViewInit() {
     this.portfolio.sections['education'] = this.educationSection;

@@ -2,27 +2,26 @@ import { Component, NgZone, ElementRef, ViewChild, AfterViewInit } from '@angula
 import { Shared } from '../../providers/shared';
 
 @Component({
-  selector: 'section-projects',
+  selector: 'app-section-projects',
   templateUrl: './projects.html',
   styleUrls: ['./projects.scss']
 })
 export class ProjectsComponent implements AfterViewInit {
-  public showMore:boolean = false;
+  public showMore = false;
   public projectsNumber = 8;
 
   @ViewChild('projects') projectsSection: ElementRef;
 
-  constructor(public portfolio:Shared,public zone:NgZone){
+  constructor(public portfolio: Shared, public zone: NgZone) { }
 
-  }
-  moreProjects(){
-    this.zone.run(()=>{
+  moreProjects() {
+    this.zone.run(() => {
       this.showMore = true;
       this.projectsNumber = this.portfolio.texts.projects.projects.length;
       console.log(this.showMore);
-    })
+    });
   }
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     this.portfolio.sections['projects'] = this.projectsSection;
   }
 }

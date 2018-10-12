@@ -2,10 +2,8 @@ import { Injectable } from '@angular/core';
 import { Shared } from './shared';
 
 @Injectable()
-export class scrollTrigger {
+export class ScrollTrigger {
 
-  constructor(private portfolio:Shared){
-
-  }
+  constructor(private portfolio: Shared) { }
 
 }

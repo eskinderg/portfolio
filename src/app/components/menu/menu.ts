@@ -3,7 +3,7 @@ import { Shared } from '../../providers/shared';
 import {style, state, animate, transition, trigger} from '@angular/animations';
 
 @Component({
-  selector: 'component-menu',
+  selector: 'app-component-menu',
   templateUrl: './menu.html',
   styleUrls: ['./menu.scss'],
   animations: [

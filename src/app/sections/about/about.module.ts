@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AboutComponent } from './about';
 import { TitleModule } from '../../components';
-import { MatButtonModule } from "@angular/material";
+import { MatButtonModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
@@ -17,4 +17,4 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   exports:      [ AboutComponent ]
 })
 
-export class AboutModule {};
+export class AboutModule {}

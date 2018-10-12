@@ -32,11 +32,11 @@
         </div>
 
         <div class="h2 title left">
-            <component-title title="{{(portfolio.texts)?.education.title}}" lineWidth="150" inverse="true"></component-title>
+            <app-component-title title="{{(portfolio.texts)?.education.title}}" lineWidth="150" inverse="true"></app-component-title>
         </div>
 
         <div class="educationItem" *ngFor="let education of (portfolio.texts)?.education.content">
-            <component-list [item]="education" type="education" ></component-list>
+            <app-component-list [item]="education" type="education" ></app-component-list>
         </div>
     </div>
 
@@ -85,10 +85,10 @@
     <!-- </div> -->
 
     <!-- <div class="title h2 right"> -->
-    <!--     <component-title title="{{(portfolio.texts)?.conferences.title}}" lineWidth="185"></component-title> -->
+    <!--     <app-component-title title="{{(portfolio.texts)?.conferences.title}}" lineWidth="185"></app-component-title> -->
     <!-- </div> -->
     <!-- <div class="conferenceItem" *ngFor="let conference of (portfolio.texts)?.conferences.content"> -->
-    <!--     <component-list [item]="conference" type="conference" ></component-list> -->
+    <!--     <app-component-list [item]="conference" type="conference" ></app-component-list> -->
     <!-- </div> -->
     <!-- </div> -->
 </div>

@@ -18,6 +18,7 @@ export class Shared {
     if (value || value === false) {
       this.menuVisible = value;
     } else {
+      // tslint:disable-next-line:no-unused-expression triple-equals
       this.menuVisible != this.menuVisible;
     }
 

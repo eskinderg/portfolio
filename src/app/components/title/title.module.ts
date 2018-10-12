@@ -9,4 +9,4 @@ import { TitleComponent } from './title';
   exports:      [ TitleComponent ]
 })
 
-export class TitleModule {};
+export class TitleModule {}
