@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu';
-import { MatIconModule, MatButtonModule } from "@angular/material";
+import { MatIconModule, MatButtonModule } from '@angular/material';
 
 @NgModule({
   imports: [ CommonModule, MatButtonModule, MatIconModule ],
@@ -10,4 +10,4 @@ import { MatIconModule, MatButtonModule } from "@angular/material";
   exports:      [ MenuComponent ]
 })
 
-export class MenuModule {};
+export class MenuModule {}

@@ -11,4 +11,4 @@ import { TimelineModule, TitleModule } from '../../components/index';
   exports:      [ ExperienceComponent ]
 })
 
-export class ExperienceModule {};
+export class ExperienceModule {}

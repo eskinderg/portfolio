@@ -4,9 +4,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './contact';
-import { MatInputModule, MatButtonModule } from "@angular/material";
+import { MatInputModule, MatButtonModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatIconModule } from "@angular/material";
+import { MatIconModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -23,4 +23,4 @@ import { MatIconModule } from "@angular/material";
   exports:      [ ContactComponent ]
 })
 
-export class ContactModule {};
+export class ContactModule {}

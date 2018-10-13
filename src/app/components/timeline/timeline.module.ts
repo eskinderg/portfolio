@@ -12,4 +12,4 @@ import { MatDividerModule } from '@angular/material/divider';
   exports:      [ TimelineComponent ]
 })
 
-export class TimelineModule {};
+export class TimelineModule {}

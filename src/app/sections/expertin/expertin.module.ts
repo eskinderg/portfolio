@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ExpertinComponent } from './expertin';
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { MasteryModule, TitleModule } from '../../components/index';
 
 @NgModule({
@@ -12,4 +12,4 @@ import { MasteryModule, TitleModule } from '../../components/index';
   exports:      [ ExpertinComponent ]
 })
 
-export class ExpertinModule {};
+export class ExpertinModule {}

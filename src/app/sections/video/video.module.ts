@@ -10,4 +10,4 @@ import { VideoComponent } from './video';
   exports:      [ VideoComponent ]
 })
 
-export class VideoModule {};
+export class VideoModule {}

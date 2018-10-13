@@ -10,4 +10,4 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   exports:      [ ProjectComponent ]
 })
 
-export class ProjectModule {};
+export class ProjectModule {}

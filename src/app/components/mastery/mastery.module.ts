@@ -8,4 +8,4 @@ import { MasteryComponent } from './mastery';
   exports:      [ MasteryComponent ]
 })
 
-export class MasteryModule {};
+export class MasteryModule {}

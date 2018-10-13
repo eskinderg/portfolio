@@ -9,4 +9,4 @@ import { ListComponent } from './list';
   exports:      [ ListComponent ]
 })
 
-export class ListModule {};
+export class ListModule {}

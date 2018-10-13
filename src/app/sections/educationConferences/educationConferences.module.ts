@@ -12,4 +12,4 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   exports:      [ EducationConferencesComponent ]
 })
 
-export class EducationConferencesModule {};
+export class EducationConferencesModule {}
