@@ -32,7 +32,9 @@
       "By following the best practices above, I produce “clean code” which is comprehensive, easy to debug and maintain.",
       "I have been passionate with development since childhood and enjoy learning about the latest technological advancements."
     ],
-    "button": "Download CV / Resume PDF"
+    "button": "CV / Resume",
+    "pdf": "Adobe Acrobat Version (pdf)",
+    "word": "Word Document Version (docx)"
   },
   "expertin" : {
     "title": "TECHNOLOGIES",
@@ -166,7 +168,7 @@
       {
         "title":"Freelance Web Developer (Front End Developer)",
         "subtitle":"Front End (Angular), Elance",
-        "year":"May 2017 - PRESENT",
+        "year":"Sept 2018 - PRESENT",
         "intro": [
           "Freelance"
         ],
@@ -192,7 +194,7 @@
       },{
       "title":"Web Developer (Front End)",
       "subtitle":"Front End, Nuaxis.",
-      "year":"Aug 2016 - Feb 2017",
+      "year":"Aug 2016 - Jul 2018",
       "intro": [
         "Nuaxis"
       ],
@@ -224,6 +226,28 @@
         }
       ],
       "used":["Angular" ,"Typescript" ,"Javascript" ,"jQuery" ,"HTML5" ,"Sass" ,"Bootstrap", "Google API", "Gulp","OAuth","NodeJS","Postgres SQL","Git"]
+      },{
+      "title":"Software Engineer II",
+      "year":"Nov 2015 - Aug 2016",
+      "intro": [
+        "Bloomberg BNA"
+      ],
+      "elements":[
+        {
+          "type":"list",
+          "header":"Key Responsibilities include but not limited to:",
+          "list": [
+            "E commerce development using Agile methodologies",
+            "Full Stack web development using ASP .Net MVC, C#, Angularjs and MSSQL.",
+            "Provide support for legacy applications and strategic migration planning for internal legacy web application.",
+            "Integrate Asp MVC with Ektron system",
+            "Design modern architectural patterns for new and legacy systems.",
+            "Write Front-end, Back-end Unit Tests that for re factoring existing code and for continuous integration deployment process.",
+            "Provide statistical information for senior managers"
+          ]
+        }
+      ],
+      "used":["Angular", "Javascript" ,"jQuery" ,"HTML5" ,"Sass" ,"Bootstrap", "C#", "ASP MVC","Entity Framework", "Gulp","OAuth","MSSQL","Git"]
       },{
       "title":"Web Developer & Designer",
       "subtitle":"Full-Stack Software Developer & Designer",
@@ -282,12 +306,12 @@
       "title": "Microsoft Certified C# Specialist",
       "subtitle": "Microsoft",
       "img": "bg-angular",
-      "year": "2015"
+      "year": "2016"
       },{
       "title": "Microsoft Certified Professional (MCP) ",
       "subtitle": "Microsoft",
       "img": "bg-angular",
-      "year": "2015"
+      "year": "2016"
       }
     ]
   },
@@ -301,8 +325,8 @@
     "input": [
       "NAME","EMAIL","MESSAGE"
     ],
-    "mail":"eskinderg@eskinder.net",
-    "phone":"202 656 0371",
+    "mail":"eskinderget@gmail.com",
+    "phone":"703 509 3312",
     "button":"Send message"
   },
   "footer": {

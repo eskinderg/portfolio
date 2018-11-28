@@ -21,7 +21,6 @@ import {
 } from './sections/index';
 import { ScrollTrigger } from './providers/scrollTrigger';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
-import { TransferHttpCacheModule } from '@nguniversal/common';
 import { BaBackTopModule } from './components/babacktop/babacktop.module';
 /*
 import { RouterModule } from '@angular/router';
@@ -46,7 +45,6 @@ export class RavenErrorHandler implements ErrorHandler {
     ],
     imports: [
       BrowserModule.withServerTransition({appId: 'portfolio'}),
-      TransferHttpCacheModule,
       BrowserTransferStateModule,
       BrowserAnimationsModule,
       HttpClientModule,
