@@ -28,6 +28,7 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit() {
+
     this.portfolio.menu.subscribe( value => {
       this.visible = value;
     });
