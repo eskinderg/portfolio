@@ -14,7 +14,7 @@ import { SpeedDialFabPosition } from './components/speeddial/speed-dial-fab.comp
 export class AppComponent implements OnInit {
 
   isDarkTheme: Observable<boolean>;
-  public selectedTheme: string = "blue-theme";
+  public selectedTheme: string;
 
   public speedDialFabButtons = [
     {
@@ -105,7 +105,7 @@ export class AppComponent implements OnInit {
   }
   ngOnInit() {
 
-    this.isDarkTheme = this.themeService.isDarkTheme;
+    this.selectedTheme = localStorage.getItem('theme');
 
     if (!this.portfolio.texts) {
       this.portfolio.getTexts().subscribe(
@@ -125,7 +125,7 @@ export class AppComponent implements OnInit {
 
   onSpeedDialFabClicked(btn: {icon: string, theme: string}) {
     this.selectedTheme = btn.theme;
-    console.log(btn);
+    localStorage.setItem('theme',btn.theme);
   }
 
 
