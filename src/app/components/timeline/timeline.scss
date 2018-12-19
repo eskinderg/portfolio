@@ -1,3 +1,5 @@
+@import '~@angular/material/theming';
+
 .experienceList{
   color: #585858;
   font-size: 13px;
@@ -44,9 +46,18 @@
   word-break: break-word;
 }
 .chip{
-  background-color:#ECEFF1;
   margin: 4px!important;
 }
 .gapTop{
   padding-top: 15px;
+}
+
+@mixin timeline-theme($theme) {
+  $accent: map-get($theme, accent);
+  $background: map-get($theme, background);
+  $background-color: mat-color($background, card);
+
+  .chip {
+    background-color: mat-color($accent) !important;
+  }
 }

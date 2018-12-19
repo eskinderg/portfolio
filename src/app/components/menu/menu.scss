@@ -1,3 +1,4 @@
+@import '~@angular/material/theming';
 
 .MenuButton{
   display: block;
@@ -9,8 +10,9 @@
   font-size: 0;
   padding: 3px 0 0 0;
   z-index: 1000;
-  background-color: #FFFFFF;
+  // background-color: #FFFFFF;
   color: #000000;
+  fill: #FFFFFF;
 
   transition: all 0.35s;
 }
@@ -22,9 +24,7 @@
 .MenuButton.default .icon{
   fill:#ffffff;
 }
-.MenuButton .icon{
-  fill: #4280F7;
-}
+
 .MenuFullscreen{
   display: block;
   position: fixed;
@@ -81,12 +81,12 @@
 .animated #line1{
   transform: translateY(7px) translateX(9px) rotate(-45deg);
   transform-origin: 15px 15px;
-  fill: #252E38;
+  // fill: #252E38;
 }
 .animated #line2{
   transform: translateY(-3px) translateX(-9px) rotate(45deg);
   transform-origin: 15px 15px;
-  fill: #252E38;
+  // fill: #252E38;
 }
 .animated #line3{
   opacity: 0;
@@ -94,4 +94,20 @@
 #line1,#line2,#line3{
   -webkit-transition: all 0.35s; /* Safari */
   transition: all 0.35s;
+}
+@mixin menu-theme($theme) {
+  $accent: map-get($theme, accent);
+  $background: map-get($theme, background);
+  $background-color: mat-color($background, card);
+
+  .icon{
+    // background-color: mat-color($accent);
+    // fill: #FFFFFF;
+    // fill: mat-color($accent);
+  }
+  .MenuButton {
+    // fill: mat-color($accent);
+    // fill: mat-color($accent);
+    // fill: #FFFFFF;
+  }
 }

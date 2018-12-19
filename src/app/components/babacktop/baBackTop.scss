@@ -1,22 +1,32 @@
-$height: 52px;
+@import '~@angular/material/theming';
 
-.ba-back-top {
-  color: #427ff7;
-  position: fixed;
-  width: $height;
-  height: $height;
-  cursor: pointer;
-  z-index: 10;
-  display: none;
-  text-decoration: none;
-  right: 40px;
-  bottom: 40px !important;
-  font-size: 45px;
-  text-align: center;
-  // opacity: 0.4;
-  border-radius: 50%;
-  line-height: 46px;
-  &:hover {
-    opacity: 0.6;
+
+@mixin ba-back-theme($theme) {
+  $accent: map-get($theme, accent);
+  $background: map-get($theme, background);
+  $background-color: mat-color($background, card);
+
+  $height: 52px;
+
+  .ba-back-top {
+    color: #FFF;
+    position: fixed;
+    width: $height;
+    height: $height;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+    text-decoration: none;
+    right: 40px;
+    bottom: 40px !important;
+    font-size: 45px;
+    text-align: center;
+    // opacity: 0.4;
+    background-color: mat-color($accent);
+    border-radius: 50%;
+    line-height: 40px;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }

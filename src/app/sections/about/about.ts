@@ -1,7 +1,6 @@
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { Shared } from '../../providers/shared';
 
-
 @Component({
   selector: 'app-section-about',
   templateUrl: './about.html',

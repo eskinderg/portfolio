@@ -22,6 +22,15 @@ import {
 import { ScrollTrigger } from './providers/scrollTrigger';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { BaBackTopModule } from './components/babacktop/babacktop.module';
+import { ThemeService } from './providers/theme.service';
+import {
+  MatIconModule,
+  MatButtonModule,
+  MatSlideToggleModule,
+  MatButtonToggleModule,
+  MatTooltipModule
+} from '@angular/material';
+import { SpeedDialFabComponent } from './components/speeddial/speed-dial-fab.component';
 /*
 import { RouterModule } from '@angular/router';
 import { Routing } from './app.routes';
@@ -41,7 +50,7 @@ export class RavenErrorHandler implements ErrorHandler {
 
   @NgModule({
     declarations: [
-      AppComponent
+      AppComponent, SpeedDialFabComponent
     ],
     imports: [
       BrowserModule.withServerTransition({appId: 'portfolio'}),
@@ -49,12 +58,13 @@ export class RavenErrorHandler implements ErrorHandler {
       BrowserAnimationsModule,
       HttpClientModule,
       BaBackTopModule,
+      MatButtonModule, MatIconModule, MatSlideToggleModule, MatButtonToggleModule, MatTooltipModule,
       // RouterModule.forRoot( Routing ),
       MenuModule, VideoModule,
       AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, ProjectsModule,
       ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
     ],
-    providers: [ Shared , ScrollTrigger,
+    providers: [ Shared , ScrollTrigger, ThemeService
       // { provide: ErrorHandler, useClass: RavenErrorHandler }
     ],
     bootstrap: [ AppComponent ]

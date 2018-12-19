@@ -11,7 +11,6 @@ export class VideoComponent implements AfterViewInit {
   @ViewChild('video') videoSection: ElementRef;
 
   constructor(public portfolio: Shared) {
-
   }
 
   ngAfterViewInit() {
