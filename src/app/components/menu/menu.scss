@@ -100,6 +100,13 @@
   $background: map-get($theme, background);
   $background-color: mat-color($background, card);
 
+  a {
+     color: #FFFFFF !important;
+  }
+
+  .MenuFullscreen {
+    background-color: mat-color($accent) !important;
+  }
   .icon{
     // background-color: mat-color($accent);
     // fill: #FFFFFF;

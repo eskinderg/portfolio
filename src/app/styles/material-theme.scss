@@ -13,10 +13,11 @@ $theme:   mat-light-theme($primary, $accent, $warn);
 
 // Our dark theme
 .dark-theme {
-  $dark-primary: mat-palette($mat-yellow);
+  $dark-primary: mat-palette($mat-grey);
   $dark-accent:  mat-palette($mat-grey, A400, A100, A700);
   $dark-warn:    mat-palette($mat-red);
   $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+  // $foreground: map-get($dark-theme, foreground);
 
   @include angular-material-theme($dark-theme);
   @include component-themes($dark-theme);
@@ -32,7 +33,7 @@ $theme:   mat-light-theme($primary, $accent, $warn);
 }
 
 .green-theme {
-  $dark-primary: mat-palette($mat-red);
+  $dark-primary: mat-palette($mat-green);
   $dark-accent:  mat-palette($mat-green, A400, A100, A700);
   $dark-warn:    mat-palette($mat-red);
   $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);

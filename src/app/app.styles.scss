@@ -1,4 +1,4 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 .viewWrapper{
   width: 100%;
@@ -40,9 +40,10 @@
 .bold{
   font-weight: bold;
 }
-.colorWhite{
-  color: #FFFFFF;
-}
+
+  .colorWhite{
+    color: #FFFFFF;
+  }
 .colorBlue{
   color: #427ff7;
 }
@@ -239,4 +240,26 @@ body{
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+}
+
+
+@mixin app-theme($theme) {
+  $accent: map-get($theme, accent);
+  $primary: map-get($theme, primary);
+  $background: map-get($theme, background);
+  $warn: map-get($theme, warn);
+  $background-color: mat-color($background, card);
+
+  .colorWhite{
+    // color: mat-color($dark-accent);
+    // color: mat-color($primary);
+  }
+
+  // .h1 .h2 .h3 .h4 {
+  //   color: mat-color($primary);
+  // }
+
+  .chip {
+    background-color: mat-color($accent) !important;
+  }
 }
