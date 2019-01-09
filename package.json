@@ -9,13 +9,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "local": "cd dist/browser && http-server",
+    "local": "cd dist && http-server",
     "ssr:build": "npm run build:client-and-server-bundles",
     "ssr": "npm run ssr:build && node dist/server.js",
     "lang": "gulp minify",
     "build:client-and-server-bundles": "npm run lang && ng build --prod --stats-json && ng build --prod --stats-json",
     "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
-    "bundle-report-browser": "webpack-bundle-analyzer dist/browser/stats.json",
+    "bundle-report-browser": "webpack-bundle-analyzer dist/stats.json",
     "bundle-report-server": "webpack-bundle-analyzer dist/server/stats.json"
   },
   "private": true,
@@ -46,7 +46,7 @@
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.11.0",
+    "@angular-devkit/build-angular": "^0.12.0",
     "@angular/cdk": "^7.1.0",
     "@angular/cli": "^7.1.0",
     "@angular/flex-layout": "^7.0.0-beta.19",

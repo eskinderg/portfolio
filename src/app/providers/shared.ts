@@ -65,16 +65,13 @@ export class Shared {
   // }
 
   getTexts(lang?: string) {
-    console.log(environment);
     if(!isDevMode()) {
-      this.langPath = `/assets/json/${lang || 'en.min'}.json`;
+      this.langPath = `/assets/json/${lang || 'en'}.min.json`;
     }
     else {
       this.langPath = `/assets/json/${lang || 'en'}.json`;
     }
-    console.log(this.langPath);
     return this.http.get<{}>(this.langPath);
-    // return this.http.get(environment.lang);
 
   }
 
