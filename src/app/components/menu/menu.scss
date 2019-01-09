@@ -48,7 +48,7 @@
     margin: 16px 0;
   }
   nav a {
-    color: #252E38;
+    color: #FFF;
     text-decoration: none;
     cursor: pointer;
   }
@@ -100,7 +100,7 @@
   $background: map-get($theme, background);
   $background-color: mat-color($background, card);
 
-  a {
+  h2 {
      color: #FFFFFF !important;
   }
 

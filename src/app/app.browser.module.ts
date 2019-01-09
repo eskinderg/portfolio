@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule , ErrorHandler } from '@angular/core';
+import { NgModule, APP_INITIALIZER, ErrorHandler } from '@angular/core';
 import { AppComponent } from './app';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -8,7 +8,7 @@ import { environment } from '../environments/environment';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
-import { MenuModule } from './components/index';
+import { MenuModule, OutlineModule } from './components/index';
 import {
   AboutModule,
   ExpertinModule,
@@ -24,13 +24,19 @@ import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { BaBackTopModule } from './components/babacktop/babacktop.module';
 import { ThemeService } from './providers/theme.service';
 import {
+  MatSelectModule,
   MatIconModule,
   MatButtonModule,
   MatSlideToggleModule,
+  MatMenuModule,
   MatButtonToggleModule,
-  MatTooltipModule
+  MatTooltipModule,
 } from '@angular/material';
 import { SpeedDialFabComponent } from './components/speeddial/speed-dial-fab.component';
+import { ScrollSpyDirective } from './providers/scroll-spy-directive';
+import { LanguageService } from './providers/language.service';
+import { TranslatePipe } from './providers/pipe.langague';
+import { LangSelectComponent } from './components/langselect/langselect';
 /*
 import { RouterModule } from '@angular/router';
 import { Routing } from './app.routes';
@@ -48,9 +54,13 @@ export class RavenErrorHandler implements ErrorHandler {
   }
 }*/
 
+export function setupLanguageFactory( service: LanguageService): Function {
+  return () => service.use('en');
+}
+
   @NgModule({
     declarations: [
-      AppComponent, SpeedDialFabComponent
+      AppComponent, SpeedDialFabComponent, LangSelectComponent, ScrollSpyDirective, TranslatePipe
     ],
     imports: [
       BrowserModule.withServerTransition({appId: 'portfolio'}),
@@ -58,13 +68,24 @@ export class RavenErrorHandler implements ErrorHandler {
       BrowserAnimationsModule,
       HttpClientModule,
       BaBackTopModule,
-      MatButtonModule, MatIconModule, MatSlideToggleModule, MatButtonToggleModule, MatTooltipModule,
+      MatButtonModule, MatMenuModule, MatSelectModule, MatIconModule, MatSlideToggleModule, MatButtonToggleModule, MatTooltipModule,
       // RouterModule.forRoot( Routing ),
-      MenuModule, VideoModule,
+      MenuModule, VideoModule, OutlineModule,
       AboutModule, ExpertinModule, ContactModule, AccomplishmentsModule, EducationConferencesModule, ExperienceModule, ProjectsModule,
       ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
     ],
-    providers: [ Shared , ScrollTrigger, ThemeService
+    exports :[
+      TranslatePipe
+    ],
+    providers: [
+      LanguageService ,{
+        provide: APP_INITIALIZER,
+        useFactory: setupLanguageFactory,
+        deps: [ LanguageService ],
+        multi: true
+      }
+
+    , Shared , ScrollTrigger, ThemeService
       // { provide: ErrorHandler, useClass: RavenErrorHandler }
     ],
     bootstrap: [ AppComponent ]

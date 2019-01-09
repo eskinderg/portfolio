@@ -1,6 +1,7 @@
 import { Injectable, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
+import { isDevMode } from '@angular/core';
 
 @Injectable()
 export class Shared {
@@ -8,11 +9,27 @@ export class Shared {
   public texts;
   public loading = false;
   public sections = {};
+  public langList;
+  public menuVisible = false;
+  private langPath;
 
-  constructor(public http: HttpClient) {}
   @Output() menu: EventEmitter<any> = new EventEmitter<any>();
 
-  menuVisible = false;
+  constructor(public http: HttpClient) {
+    // this.http.get<{}>('/assets/json/lang.json').subscribe(
+    //   lang => {
+    //     this.langList = lang
+    //   })
+
+      // this.getTexts().subscribe(
+      //   data => {
+      //     this.texts = data;
+      //     // this.speedDialFabButtons = this.portfolio.texts.colors;
+      //     // this.ref.detectChanges();
+      //   },
+      //   err => console.error(err)
+      // )
+  }
 
   toggleMenu(value?) {
     if (value || value === false) {
@@ -25,8 +42,40 @@ export class Shared {
     this.menu.emit(this.menuVisible);
   }
 
-  getTexts() {
-    return this.http.get(environment.lang);
+  getLangList() {
+    const langPath = '/assets/json/lang.json';
+    return this.http.get<[]>(langPath);
+  }
+
+  // getLangList(): Promise<{}> {
+  //   return new Promise<{}>((resolve, reject) => {
+  //     const langPath = '/assets/json/lang.json';
+  //     // const langPath = '/assets/json/texts_en.json';
+  //     this.http.get<{}>(langPath).subscribe(
+  //       langs => {
+  //         this.langList = Object.assign({}, langs || []);
+  //         resolve(this.langList);
+  //       },
+  //       error => {
+  //         this.langList = {};
+  //         resolve(this.langList);
+  //       }
+  //     );
+  //   });
+  // }
+
+  getTexts(lang?: string) {
+    console.log(environment);
+    if(!isDevMode()) {
+      this.langPath = `/assets/json/${lang || 'en.min'}.json`;
+    }
+    else {
+      this.langPath = `/assets/json/${lang || 'en'}.json`;
+    }
+    console.log(this.langPath);
+    return this.http.get<{}>(this.langPath);
+    // return this.http.get(environment.lang);
+
   }
 
 }

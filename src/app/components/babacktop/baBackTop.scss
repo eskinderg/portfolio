@@ -9,12 +9,13 @@
   $height: 52px;
 
   .ba-back-top {
+    transition: background-color 1s ease;
     color: #FFF;
     position: fixed;
     width: $height;
     height: $height;
     cursor: pointer;
-    z-index: 10;
+    z-index: 97;
     display: none;
     text-decoration: none;
     right: 40px;

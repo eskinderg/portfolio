@@ -5,6 +5,7 @@
 @import 'src/app/components/menu/menu.scss';
 @import 'src/app/components/timeline/timeline.scss';
 @import 'src/app/app.styles.scss';
+@import 'src/app/components/outline/outline.scss';
 
 @mixin component-themes($theme) {
   @include video-theme($theme);
@@ -13,5 +14,6 @@
   @include ba-back-theme($theme);
   @include menu-theme($theme);
   @include timeline-theme($theme);
+  @include outline-theme($theme);
   @include app-theme($theme);
 }

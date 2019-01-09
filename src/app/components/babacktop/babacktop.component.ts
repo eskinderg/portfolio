@@ -13,9 +13,9 @@ import * as jQuery from 'jquery';
 })
 export class BaBackTopComponent implements AfterViewInit {
 
-  @Input() position = 400;
+  @Input() position  = 400;
   @Input() showSpeed = 500;
-  @Input() moveSpeed = 1000;
+  @Input() moveSpeed = 700;
 
   @ViewChild('baBackTop') _selector: ElementRef;
   // @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;

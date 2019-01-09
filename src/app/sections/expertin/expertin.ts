@@ -8,13 +8,11 @@ import { Shared } from '../../providers/shared';
 })
 export class ExpertinComponent implements AfterViewInit {
 
-  @ViewChild('expertin') expertinSection: ElementRef;
+  @ViewChild('technologies') expertinSection: ElementRef;
 
-  constructor(public portfolio: Shared) {
-
-  }
+  constructor(public portfolio: Shared) { }
 
   ngAfterViewInit() {
-    this.portfolio.sections['expertin'] = this.expertinSection;
+    this.portfolio.sections['technologies'] = this.expertinSection;
   }
 }

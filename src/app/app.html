@@ -1,15 +1,4 @@
-<!-- <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before" (change)="toggleDarkTheme($event.checked)">Dark theme</mat-slide-toggle> -->
-<!-- Mini FAB button -->
-<!-- <button mat-fab class="MenuButton"  [ngClass]="{'default':(atTop && !visible),'animated':visible}"></button> -->
-
-
-<!-- <mat-button-toggle-group #group="matButtonToggleGroup" name="fontStyle" aria-label="Font Style"> -->
-<!--   <mat-button-toggle value="dark-theme">Dark</mat-button-toggle> -->
-<!--   <mat-button-toggle value="red-theme">Red</mat-button-toggle> -->
-<!--   <mat-button-toggle value="green-theme">Green</mat-button-toggle> -->
-<!--   <mat-button-toggle value="blue-theme">Blue</mat-button-toggle> -->
-<!--   <mat-button-toggle value="yellow-theme">Yellow</mat-button-toggle> -->
-<!-- </mat-button-toggle-group> -->
+<app-langselect style="float:right; z-index:10000; position:absolute; right:0;"></app-langselect>
 
 <div [ngClass]="{'show':portfolio.loading}" class="loading-screen" >
   <div class="loading-text"></div>
@@ -18,7 +7,6 @@
   </div>
 </div>
 
-<!-- <div [ngClass]="{'dark-theme': isDarkTheme | async}"> -->
 <div [ngClass]="selectedTheme">
 
   <speed-dial-fab
@@ -31,15 +19,17 @@
 
   <app-component-menu></app-component-menu>
 
-  <div class="viewWrapper" >
-    <app-section-video></app-section-video>
-    <app-section-about></app-section-about>
-    <app-section-expertin></app-section-expertin>
+  <div id="parentDiv" class="viewWrapper" scrollSpy [spiedTags]="spieTags"
+    (sectionChange)="onSectionChange($event)" >
+    <app-outline [(currentSection)]="activeSection"></app-outline>
+    <app-section-video id="video"></app-section-video>
+    <app-section-about id="about"></app-section-about>
+    <app-section-expertin id="technologies"></app-section-expertin>
     <!-- <section-projects></section-projects> -->
-    <app-section-accomplishments></app-section-accomplishments>
-    <app-section-experience></app-section-experience>
-    <app-section-education-conferences></app-section-education-conferences>
-    <app-section-contact></app-section-contact>
+    <app-section-accomplishments id="accomplishments"></app-section-accomplishments>
+    <app-section-experience id="experience"></app-section-experience>
+    <app-section-education-conferences id="education"></app-section-education-conferences>
+    <app-section-contact id="contact"></app-section-contact>
   </div>
 
   <app-back-top position="200"></app-back-top>

@@ -1,10 +1,9 @@
-import { Component, ChangeDetectionStrategy, ChangeDetectorRef, OnInit } from '@angular/core';
+import { Component, EventEmitter, ChangeDetectionStrategy, ChangeDetectorRef, OnInit, Output } from '@angular/core';
 import { Shared } from './providers/shared';
 import { Meta } from '@angular/platform-browser';
-import { ThemeService } from './providers/theme.service';
 import { Observable } from 'rxjs/internal/Observable';
-import { of } from 'rxjs';
 import { SpeedDialFabPosition } from './components/speeddial/speed-dial-fab.component';
+import { LanguageService } from './providers/language.service';
 
 @Component({
   selector: 'app-main',
@@ -13,87 +12,26 @@ import { SpeedDialFabPosition } from './components/speeddial/speed-dial-fab.comp
 })
 export class AppComponent implements OnInit {
 
-  isDarkTheme: Observable<boolean>;
+  public activeSection: string;
+  public speedDialFabButtons;
   public selectedTheme: string;
 
-  public speedDialFabButtons = [
-    {
-      theme: 'dark-theme',
-      icon: 'timeline',
-      tooltip: 'Dark'
-    },
-    {
-      theme: 'red-theme',
-      icon: 'view_headline',
-      tooltip: 'Red'
-    },
-    {
-      theme: 'green-theme',
-      tooltip: 'Green'
-    },
-    {
-      theme: 'blue-theme',
-      icon: 'lightbulb_outline',
-      tooltip: 'Blue'
-    },
-    {
-      theme: 'orange-theme',
-      icon: 'lightbulb_outline',
-      tooltip: 'Orange'
-    },
-    {
-      theme: 'yellow-theme',
-      icon: 'lock',
-      tooltip: 'Yellow'
-    },
-    {
-      theme: 'pink-theme',
-      icon: 'lock',
-      tooltip: 'Pink'
-    },
-    {
-      theme: 'deeppurple-theme',
-      icon: 'lock',
-      tooltip: 'Deep Purple'
-    },
-    {
-      theme: 'indigo-theme',
-      icon: 'lock',
-      tooltip: 'indigo'
-    },
-    {
-      theme: 'lightblue-theme',
-      icon: 'lock',
-      tooltip: 'Light Blue'
-    },
-    {
-      theme: 'cyan-theme',
-      icon: 'lock',
-      tooltip: 'Cyan'
-    },
-    {
-      theme: 'brown-theme',
-      icon: 'lock',
-      tooltip: 'Brown'
-    },
-    {
-      theme: 'bluegrey-theme',
-      icon: 'lock',
-      tooltip: 'Blue Grey'
-    }
+  public spieTags = [
+    'APP-SECTION-VIDEO',
+    'APP-SECTION-ABOUT',
+    'APP-SECTION-EXPERTIN',
+    'APP-SECTION-ACCOMPLISHMENTS',
+    'APP-SECTION-EXPERIENCE',
+    'APP-SECTION-EDUCATION-CONFERENCES',
+    'APP-SECTION-CONTACT'
   ];
 
   SpeedDialFabPosition          = SpeedDialFabPosition;
-  speedDialFabColumnDirection   = 'column';
   speedDialFabPosition          = SpeedDialFabPosition.Top;
+  speedDialFabColumnDirection   = 'column';
   speedDialFabPositionClassName = 'speed-dial-container-top';
 
-  constructor(
-    private themeService: ThemeService,
-    public portfolio: Shared,
-    public ref: ChangeDetectorRef,
-    public meta: Meta
-  ) {
+  constructor(public portfolio: Shared, public ref: ChangeDetectorRef, public language: LanguageService , public meta: Meta) {
     this.meta.addTags([
       {name: 'og:title', content: 'Eskinder | Profile'},
       {name: 'og:description', content: 'Hello, my name is Eskinder Gezahagne. I am a Web Developer ( Web / FE - Angular ) and this is my portfolio page. As confirmed by my portfolio content and code, I combine my knowledge, experience and skills with technology in order to develop professional and innovative web applications using open source technologies'},
@@ -104,23 +42,49 @@ export class AppComponent implements OnInit {
     ]);
   }
   ngOnInit() {
-
+        // this.route.data.subscribe(({ esk }) => {
+        //   console.log(esk);
+        // });
+    // console.log(this.route.snapshot.data['esk']);
     this.selectedTheme = localStorage.getItem('theme');
+
+    // this.portfolio.getButtons().subscribe(
+    //   buttons => {
+    //     this.speedDialFabButtons = buttons;
+    //   }
+    // );
+
+    // this.portfolio.getLangList().then(()=> {
+    //   console.log(this.portfolio.langList);
+    // })
+
+    // this.language.use('en').then(() => {
+    //   console.log(this.language.text);
+    //   console.log(this.language.text['about']);
+    // });
 
     if (!this.portfolio.texts) {
       this.portfolio.getTexts().subscribe(
         data => {
-          // console.log(data);
           this.portfolio.texts = data;
+          this.speedDialFabButtons = this.portfolio.texts.colors;
           this.ref.detectChanges();
         },
         err => console.error(err)
       );
     }
+
   }
 
-  toggleDarkTheme(checked: boolean) {
-    this.themeService.setDarkTheme(checked);
+  btn_click(lang:string) {
+    this.portfolio.getTexts(lang).subscribe(
+      data => {
+        this.portfolio.texts = data;
+        this.speedDialFabButtons = this.portfolio.texts.colors;
+        this.ref.detectChanges();
+      },
+      err => console.error(err)
+    );
   }
 
   onSpeedDialFabClicked(btn: {icon: string, theme: string}) {
@@ -128,6 +92,8 @@ export class AppComponent implements OnInit {
     localStorage.setItem('theme',btn.theme);
   }
 
-
+  onSectionChange(sectionId: string) {
+    this.activeSection = sectionId;
+  }
 
 }

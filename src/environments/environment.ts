@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  lang: '/assets/json/texts_en.json'
+  lang: '/assets/json/am.json',
 };

@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-
 import { speedDialFabAnimations } from './speed-dial-fab.animations';
 
 export interface FabButton {
