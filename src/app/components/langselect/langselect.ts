@@ -9,11 +9,14 @@ import { Shared           }from '../../providers/shared';
 export class LangSelectComponent {
 
   public languages: any;
+  public selectedLangugage: any;
 
   constructor(public portfolio: Shared) {
     this.portfolio.getLangList().subscribe(lang => {
       this.languages = lang;
     })
+
+    this.selectedLangugage = this.translate(localStorage.getItem('language') || "en");
   }
 
   changeLanguage(lang:string) {
@@ -21,9 +24,20 @@ export class LangSelectComponent {
       data => {
         this.portfolio.texts = data;
         localStorage.setItem('language',lang);
+        this.selectedLangugage = this.translate(lang);
       },
       err => console.error(err)
     );
   }
 
+  translate (lang:string):any {
+
+    switch (lang)
+    {
+      case "am":
+        return "ET"
+      case "en":
+        return "GB";
+    }
+  }
 }
