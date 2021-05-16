@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   public activeSection: string;
   public speedDialFabButtons;
   public selectedTheme: string;
+  public selectedLang: string;
 
   public spieTags = [
     'APP-SECTION-VIDEO',
@@ -48,6 +49,7 @@ export class AppComponent implements OnInit {
         // });
     // console.log(this.route.snapshot.data['esk']);
     this.selectedTheme = localStorage.getItem('theme');
+    this.selectedLang = localStorage.getItem('language');
 
     // this.portfolio.getButtons().subscribe(
     //   buttons => {
@@ -65,7 +67,7 @@ export class AppComponent implements OnInit {
     // });
 
     if (!this.portfolio.texts) {
-      this.portfolio.getTexts().subscribe(
+      this.portfolio.getTexts(this.selectedLang).subscribe(
         data => {
           this.portfolio.texts = data;
           this.ref.detectChanges();

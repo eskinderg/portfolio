@@ -20,6 +20,7 @@ export class LangSelectComponent {
     this.portfolio.getTexts(lang).subscribe(
       data => {
         this.portfolio.texts = data;
+        localStorage.setItem('language',lang);
       },
       err => console.error(err)
     );
