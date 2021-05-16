@@ -1,28 +1,24 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, APP_INITIALIZER, ErrorHandler } from '@angular/core';
-import { AppComponent } from './app';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Shared } from './providers/shared';
-import { environment } from '../environments/environment';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms';
-import { MenuModule, OutlineModule } from './components/index';
+import { BrowserModule                           }from '@angular/platform-browser';
+import { NgModule, APP_INITIALIZER, ErrorHandler }from '@angular/core';
+import { AppComponent                            }from './app';
+import { HttpClientModule                        }from '@angular/common/http';
+import { BrowserAnimationsModule                 }from '@angular/platform-browser/animations';
+import { Shared                                  }from './providers/shared';
+import { environment                             }from '../environments/environment';
+import { ServiceWorkerModule                     }from '@angular/service-worker';
+import { FlexLayoutModule                        }from '@angular/flex-layout';
+import { FormsModule                             }from '@angular/forms';
+import { MenuModule, OutlineModule               }from './components/index';
 import {
-  AboutModule,
-  ExpertinModule,
-  ContactModule,
-  AccomplishmentsModule,
-  EducationConferencesModule,
-  ExperienceModule,
-  VideoModule,
-  ProjectsModule
+  AboutModule, ExpertinModule,
+  ContactModule, AccomplishmentsModule,
+  EducationConferencesModule, ExperienceModule,
+  VideoModule, ProjectsModule
 } from './sections/index';
-import { ScrollTrigger } from './providers/scrollTrigger';
-import { BrowserTransferStateModule } from '@angular/platform-browser';
-import { BaBackTopModule } from './components/babacktop/babacktop.module';
-import { ThemeService } from './providers/theme.service';
+import { ScrollTrigger              }from './providers/scrollTrigger';
+import { BrowserTransferStateModule }from '@angular/platform-browser';
+import { BaBackTopModule            }from './components/babacktop/babacktop.module';
+import { ThemeService               }from './providers/theme.service';
 import {
   MatSelectModule,
   MatIconModule,
@@ -32,11 +28,11 @@ import {
   MatButtonToggleModule,
   MatTooltipModule,
 } from '@angular/material';
-import { SpeedDialFabComponent } from './components/speeddial/speed-dial-fab.component';
-import { ScrollSpyDirective } from './providers/scroll-spy-directive';
-import { LanguageService } from './providers/language.service';
-import { TranslatePipe } from './providers/pipe.langague';
-import { LangSelectComponent } from './components/langselect/langselect';
+import { SpeedDialFabComponent }from './components/speeddial/speed-dial-fab.component';
+import { ScrollSpyDirective    }from './providers/scroll-spy-directive';
+import { LanguageService       }from './providers/language.service';
+import { TranslatePipe         }from './providers/pipe.langague';
+import { LangSelectComponent   }from './components/langselect/langselect';
 /*
 import { RouterModule } from '@angular/router';
 import { Routing } from './app.routes';

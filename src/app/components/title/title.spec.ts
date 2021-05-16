@@ -1,7 +1,6 @@
 /* tslint:disable:no-unused-variable */
-
-import { TestBed, async } from '@angular/core/testing';
-import { MenuComponent } from '../menu/menu';
+import { TestBed, async }from '@angular/core/testing';
+import { MenuComponent  }from '../menu/menu';
 
 describe('AppComponent', () => {
   beforeEach(() => {

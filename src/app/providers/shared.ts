@@ -1,12 +1,13 @@
-import { Injectable, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { environment } from '../../environments/environment';
-import { isDevMode } from '@angular/core';
+import { Injectable, EventEmitter, Output, ViewChild, ElementRef }from '@angular/core';
+import { HttpClient                                              }from '@angular/common/http';
+import { environment                                             }from '../../environments/environment';
+import { isDevMode                                               }from '@angular/core';
 
 @Injectable()
 export class Shared {
 
   public texts;
+  public colors;
   public loading = false;
   public sections = {};
   public langList;
@@ -45,6 +46,11 @@ export class Shared {
   getLangList() {
     const langPath = '/assets/json/lang.json';
     return this.http.get<[]>(langPath);
+  }
+
+  getColorList() {
+    const colorPath = '/assets/json/colors.json';
+    return this.http.get<[]>(colorPath);
   }
 
   // getLangList(): Promise<{}> {

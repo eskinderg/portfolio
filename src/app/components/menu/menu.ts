@@ -1,6 +1,6 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
-import { Shared } from '../../providers/shared';
-import {style, state, animate, transition, trigger} from '@angular/animations';
+import { Component, OnInit, ElementRef             }from '@angular/core';
+import { Shared                                    }from '../../providers/shared';
+import {style, state, animate, transition, trigger }from '@angular/animations';
 
 @Component({
   selector: 'app-component-menu',
@@ -28,7 +28,6 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit() {
-
     this.portfolio.menu.subscribe( value => {
       this.visible = value;
     });

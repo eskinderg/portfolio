@@ -1,12 +1,4 @@
-import {
-  Directive,
-  Injectable,
-  Input,
-  EventEmitter,
-  Output,
-  ElementRef,
-  HostListener
-} from '@angular/core';
+import { Directive, Injectable, Input, EventEmitter, Output, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[scrollSpy]'

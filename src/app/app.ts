@@ -34,13 +34,14 @@ export class AppComponent implements OnInit {
   constructor(public portfolio: Shared, public ref: ChangeDetectorRef, public language: LanguageService , public meta: Meta) {
     this.meta.addTags([
       {name: 'og:title', content: 'Eskinder | Profile'},
-      {name: 'og:description', content: 'Hello, my name is Eskinder Gezahagne. I am a Web Developer ( Web / FE - Angular ) and this is my portfolio page. As confirmed by my portfolio content and code, I combine my knowledge, experience and skills with technology in order to develop professional and innovative web applications using open source technologies'},
+      {name: 'og:description', content: 'Hello, my name is Eskinder Gezahagne. I am a Web Developer ( Web / FE - Angular ) and this is my portfolio page. As confirmed by my portfolio content and code, I combine my knowledge and experience in order to develop professional web applications.'},
       {name: 'og:image', content: '/assets/img/social-min.png'},
       {name: 'author', content: 'Eskinder'},
       {name: 'keywords', content: 'Angular, Web, Frontend, Developer, Portfolio, Eskinder, Gezahagne, Getahun'},
-      {name: 'description', content: 'Hello, my name is Eskinder Gezahagne. I am a Web Developer ( Web / FE - Angular ) and this is my portfolio page. As confirmed by my portfolio content and code, I combine my knowledge, experience and skills with technology in order to develop professional and innovative web applications using open source technologies'}
+      {name: 'description', content: 'Hello, my name is Eskinder Gezahagne. I am a Web Developer ( Web / FE - Angular ) and this is my portfolio page. I combine my knowledge and experience in order to develop professional web applications.'}
     ]);
   }
+
   ngOnInit() {
         // this.route.data.subscribe(({ esk }) => {
         //   console.log(esk);
@@ -67,7 +68,17 @@ export class AppComponent implements OnInit {
       this.portfolio.getTexts().subscribe(
         data => {
           this.portfolio.texts = data;
-          this.speedDialFabButtons = this.portfolio.texts.colors;
+          this.ref.detectChanges();
+        },
+        err => console.error(err)
+      );
+    }
+
+    if (!this.portfolio.colors) {
+      this.portfolio.getColorList().subscribe (
+        data => {
+          this.portfolio.colors = data["colors"]
+          this.speedDialFabButtons = this.portfolio.colors;
           this.ref.detectChanges();
         },
         err => console.error(err)
@@ -80,7 +91,6 @@ export class AppComponent implements OnInit {
     this.portfolio.getTexts(lang).subscribe(
       data => {
         this.portfolio.texts = data;
-        this.speedDialFabButtons = this.portfolio.texts.colors;
         this.ref.detectChanges();
       },
       err => console.error(err)

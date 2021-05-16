@@ -20,72 +20,6 @@
     "link": "contact"
     }
   ],
-  "colors" : [
-    {
-      "theme": "dark-theme",
-      "icon": "timeline",
-      "tooltip": "ደማቅ"
-    },
-    {
-      "theme": "red-theme",
-      "icon": "view_headline",
-      "tooltip": "ቀይ"
-    },
-    {
-      "theme": "green-theme",
-      "tooltip": "አረንጓዴ"
-    },
-    {
-      "theme": "blue-theme",
-      "icon": "lightbulb_outline",
-      "tooltip": "ሰማያዊ"
-    },
-    {
-      "theme": "orange-theme",
-      "icon": "lightbulb_outline",
-      "tooltip": "ብርቱካናማ"
-    },
-    {
-      "theme": "yellow-theme",
-      "icon": "lock",
-      "tooltip": "ቢጫ"
-    },
-    {
-      "theme": "pink-theme",
-      "icon": "lock",
-      "tooltip": "ሮዝ"
-    },
-    {
-      "theme": "deeppurple-theme",
-      "icon": "lock",
-      "tooltip": "Deep Purple"
-    },
-    {
-      "theme": "indigo-theme",
-      "icon": "lock",
-      "tooltip": "indigo"
-    },
-    {
-      "theme": "lightblue-theme",
-      "icon": "lock",
-      "tooltip": "ፈዛዛ ሰማያዊ"
-    },
-    {
-      "theme": "cyan-theme",
-      "icon": "lock",
-      "tooltip": "ሳያን"
-    },
-    {
-      "theme": "brown-theme",
-      "icon": "lock",
-      "tooltip": "ቡኒ"
-    },
-    {
-      "theme": "bluegrey-theme",
-      "icon": "lock",
-      "tooltip": "Blue Grey"
-    }
-  ],
   "video" : {
     "title": "እስክንድር ጌታሁን",
     "subtitle": "Front End Developer ( Web / Front-End )"
@@ -93,10 +27,11 @@
   "about" : {
     "title": "ስለ እኔ",
     "content": [
-      "As confirmed by my portfolio content and <a href='https://github.com/eskinderg' target='_blank'>code</a>, I combine my knowledge, experience and skills with technology in order to develop professional and innovative web applications.",
-      "I follow OAUTH, REST and SOLID software engineering principles. I am also a fan of TDD, Agile, 12-Factor App and Block-Element-Modifier methodologies. I use after-release error logging to ensure my applications are bug-free.",
-      "By following the best practices above, I produce “clean code” which is comprehensive, easy to debug and maintain.",
-      "I have been passionate with development since childhood and enjoy learning about the latest technological advancements."
+      "As confirmed by my portfolio, content and <a href='https://github.com/eskinderg' target='_blank'>code</a>, I combine my knowledge and experience in order to develop professional web applications.",
+      "I follow OAUTH, REST and SOLID software engineering principles.",
+      "I use Agile, 12-Factor App and Block-Element-Modifier methodologies.",
+      "By using the best practices above, I produce a clean code that is easy to maintain and debug.",
+      "I have been passionate with web development since childhood and continue learning the latest technological advancements."
     ],
     "button": "ካሪኩለምሺቴ",
     "pdf": "Adobe Acrobat Version (pdf)",
@@ -372,11 +307,6 @@
       "subtitle": "Microsoft",
       "img": "bg-angular",
       "year": "2016"
-      },{
-      "title": "Microsoft Certified Professional (MCP) ",
-      "subtitle": "Microsoft",
-      "img": "bg-angular",
-      "year": "2016"
       }
     ]
   },
@@ -391,7 +321,7 @@
       "NAME","EMAIL","MESSAGE"
     ],
     "mail":"eskinderget@gmail.com",
-    "phone":"703 509 3312",
+    "phone":"XXXXXXXXXXXX",
     "button":"Send message"
   },
   "footer": {

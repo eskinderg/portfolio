@@ -1,5 +1,5 @@
-import { Component, Input} from '@angular/core';
-import { Shared } from '../../providers/shared';
+import { Component, Input }from '@angular/core';
+import { Shared           }from '../../providers/shared';
 
 @Component({
   selector: 'app-langselect',

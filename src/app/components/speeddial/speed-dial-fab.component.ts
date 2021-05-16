@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { speedDialFabAnimations } from './speed-dial-fab.animations';
+import { Component, EventEmitter, Input, Output }from '@angular/core';
+import { speedDialFabAnimations }from './speed-dial-fab.animations';
 
 export interface FabButton {
   icon: string,
@@ -28,7 +28,7 @@ export class SpeedDialFabComponent {
   buttons = [];
   fabTogglerState = 'inactive';
 
-  constructor() { }
+  constructor() {}
 
   private showItems() {
     this.fabTogglerState = 'active';

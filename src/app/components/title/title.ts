@@ -1,7 +1,7 @@
-import { animate, style, transition, trigger, keyframes} from '@angular/animations';
-import { Component, Input, OnInit} from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
-import { PLATFORM_ID, Inject } from '@angular/core';
+import { animate, style, transition, trigger, keyframes }from '@angular/animations';
+import { Component, Input, OnInit                       }from '@angular/core';
+import { isPlatformBrowser                              }from '@angular/common';
+import { PLATFORM_ID, Inject                            }from '@angular/core';
 
 @Component({
   selector: 'app-component-title',

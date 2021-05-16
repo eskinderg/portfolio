@@ -1,11 +1,13 @@
 [
   {
-    "title":"EN (US)",
+    "CountryCode":"GB",
+    "title":"English",
     "code":"en",
     "icon":""
   },
   {
-    "title":"AM",
+    "CountryCode":"ET",
+    "title":"Amharic",
     "code":"am",
     "icon":""
   }

@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MatIconModule, MatButtonModule, MatSlideToggleModule} from '@angular/material';
-import { OutlineComponent } from './outline';
+import { NgModule                                             }from '@angular/core';
+import { CommonModule                                         }from '@angular/common';
+import { MatIconModule, MatButtonModule, MatSlideToggleModule }from '@angular/material';
+import { OutlineComponent                                     }from './outline';
 
 @NgModule({
   imports: [

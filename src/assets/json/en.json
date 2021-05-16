@@ -20,72 +20,6 @@
     "link": "contact"
     }
   ],
-  "colors" : [
-    {
-      "theme": "dark-theme",
-      "icon": "timeline",
-      "tooltip": "Dark"
-    },
-    {
-      "theme": "red-theme",
-      "icon": "view_headline",
-      "tooltip": "Red"
-    },
-    {
-      "theme": "green-theme",
-      "tooltip": "Green"
-    },
-    {
-      "theme": "blue-theme",
-      "icon": "lightbulb_outline",
-      "tooltip": "Blue"
-    },
-    {
-      "theme": "orange-theme",
-      "icon": "lightbulb_outline",
-      "tooltip": "Orange"
-    },
-    {
-      "theme": "yellow-theme",
-      "icon": "lock",
-      "tooltip": "Yellow"
-    },
-    {
-      "theme": "pink-theme",
-      "icon": "lock",
-      "tooltip": "Pink"
-    },
-    {
-      "theme": "deeppurple-theme",
-      "icon": "lock",
-      "tooltip": "Deep Purple"
-    },
-    {
-      "theme": "indigo-theme",
-      "icon": "lock",
-      "tooltip": "indigo"
-    },
-    {
-      "theme": "lightblue-theme",
-      "icon": "lock",
-      "tooltip": "Light Blue"
-    },
-    {
-      "theme": "cyan-theme",
-      "icon": "lock",
-      "tooltip": "Cyan"
-    },
-    {
-      "theme": "brown-theme",
-      "icon": "lock",
-      "tooltip": "Brown"
-    },
-    {
-      "theme": "bluegrey-theme",
-      "icon": "lock",
-      "tooltip": "Blue Grey"
-    }
-  ],
   "video" : {
     "title": "Eskinder G. Gezahagne",
     "subtitle": "Front End Developer ( Web / Front-End )"
@@ -93,10 +27,11 @@
   "about" : {
     "title": "ABOUT ME",
     "content": [
-      "As confirmed by my portfolio content and <a href='https://github.com/eskinderg' target='_blank'>code</a>, I combine my knowledge, experience and skills with technology in order to develop professional and innovative web applications.",
-      "I follow OAUTH, REST and SOLID software engineering principles. I am also a fan of TDD, Agile, 12-Factor App and Block-Element-Modifier methodologies. I use after-release error logging to ensure my applications are bug-free.",
-      "By following the best practices above, I produce “clean code” which is comprehensive, easy to debug and maintain.",
-      "I have been passionate with development since childhood and enjoy learning about the latest technological advancements."
+      "As confirmed by my portfolio, content and <a href='https://github.com/eskinderg' target='_blank'>code</a>, I combine my knowledge and experience in order to develop professional web applications.",
+      "I follow OAUTH, REST and SOLID software engineering principles.",
+      "I use Agile, 12-Factor App and Block-Element-Modifier methodologies.",
+      "By using the best practices above, I produce a clean code that is easy to maintain and debug.",
+      "I have been passionate with web development since childhood and continue learning the latest technological advancements."
     ],
     "button": "CV / Resume",
     "pdf": "Adobe Acrobat Version (pdf)",
@@ -221,10 +156,7 @@
         "paragraph": "Developed websites using WordPress, OpenCart and other opensource technologies"
       },{
       "title": "2016",
-      "paragraph": "Participated on OAuth implementation for user roles and permissions using JWT (JSON web token)"
-      },{
-      "title": "2008",
-      "paragraph": "Presented my thesis on a new data compression algorithm in the 2nd Panhellenic Conference of Computer Science in Samos called “Eureka”, which was acknowledged for its efficiency."
+      "paragraph": "Participated on OAuth implementation for user roles and permissions using JWT (JSON Web Token)"
       }
     ]
   },
@@ -232,8 +164,8 @@
     "title": "EXPERIENCE",
     "content": [
       {
-        "title":"Freelance Web Developer (Front End Developer)",
-        "subtitle":"Front End (Angular), Elance",
+        "title":"Freelance Web Developer (Front-End Developer)",
+        "subtitle":"Front-End (Angular), Elance",
         "year":"Sept 2018 - PRESENT",
         "intro": [
           "Freelance"
@@ -241,16 +173,15 @@
         "elements":[
           {
             "type":"list",
-            "header":"Key Responsibilities include but not limited to:",
+            "header":"Key Responsibilities include, but not limited to:",
             "list": [
-              "Created SPA, user interactive (UI) web pages using web technologies like HTML5, SASS, Typescript, Angular2 and Bootstrap.",
+              "Created Single Page Applications by using web technologies like HTML5, SASS, Typescript, Angular2 and Bootstrap.",
               "Created and used Reducers that received Actions to modify the store State.",
-              "Created Action dispatch to deploy Actions to add Dynamic Functionalities",
               "Created custom NPM modules.",
               "Developed administrative UI Components using Angular2, Typescript and Webpack",
               "Used Bootstrap for Responsive Web design.",
-              "Optimized Front End assets for speed and performance",
-              "Used Middleware, Redux-Promise in application to retrieve data from Back-End and to also perform RESTFUL services.",
+              "Optimized Front-End assets for speed and performance",
+              "Used Middleware, Redux-Promise in an application to retrieve data from Back-End RESTFUL service.",
               "Created custom Angular Components including Breadcrumbs, Reactive Forms, Form Validators, Tabbed Components and Toggle Buttons."
             ]
           }
@@ -270,9 +201,9 @@
           "list": [
             "Created programs as per user / design requirements using AngularJS",
             "Collaborated with cross-functional teams (DEV, UX/UI & BA) to define, design, and deliver creative digital solutions",
-            "Setting up the Front-End development environment (Angular) and processes ( Team of 2 Developers at beginning, with plan to add 3 more later on )",
-            "Utilized, automated unit tests and integration tests for application lifecycle",
-            "Executed Agile Developmental techniques",
+            "Set up Front-End development environment (Angular)",
+            "Utilized, automated unit and integration tests for application lifecycle",
+            "Executed Agile Development techniques",
             "Utilized industry best practices to create effective business solutions for clients",
             "Participated and contributed towards senior-level technology discussions",
             "Created HTML forms using section 508 US web standards",
@@ -285,7 +216,7 @@
             "Used bootstrap CSS to create, modify and update web layouts",
             "Created angular 1.5 components, directives and filters",
             "Used Node JS schema validator for backend validation",
-            "Utilized, automated unit tests and integration tests for application lifecycle",
+            "Utilized automated integration tests for application lifecycle",
             "Performed unit and integration test for frontend and backend systems using AngularJS and NodeJS"
           ]
         }
@@ -304,10 +235,10 @@
           "list": [
             "E commerce development using Agile methodologies",
             "Full Stack web development using ASP .Net MVC, C#, Angularjs and MSSQL.",
-            "Provided support for legacy applications and strategic migration planning for internal legacy web application.",
+            "Provided support for web applications and strategic migration planning for internal web application.",
             "Integrated Asp MVC with Ektron system",
-            "Designed modern architectural patterns for new and legacy systems.",
-            "Wrote Front-end, Back-end Unit Tests that for re factoring existing code and for continuous integration deployment process.",
+            "Provided architectural patterns for intranet systems.",
+            "Wrote Front-end, Back-end Unit Tests for re factoring existing code and for continuous integration deployment process.",
             "Provided statistical information for senior managers"
           ]
         }
@@ -347,8 +278,8 @@
           "list": [
             "Designed visual layout of websites.",
             "Created Stored Procedures using MSSQL.",
-            "Tested a website before it goes live and identify problems.",
-            "Advised users on the functionality of the website.",
+            "Tested website before it goes live and identify problems.",
+            "Advised users on the functionality of website.",
             "Changed code of an existing website using MVC, C#, Entity Framework and LINQ technologies.",
             "Optimized web assets for optimal speed and performance",
             "Produced reports and statistical information for senior managers"
@@ -372,11 +303,6 @@
       "subtitle": "Microsoft",
       "img": "bg-angular",
       "year": "2016"
-      },{
-      "title": "Microsoft Certified Professional (MCP) ",
-      "subtitle": "Microsoft",
-      "img": "bg-angular",
-      "year": "2016"
       }
     ]
   },
@@ -386,12 +312,12 @@
     ]
   },
   "contact": {
-    "intro": "Feel free to contact me for feedback, project cooperation or any other matter. I will reply as soon as possible...",
+    "intro": "You can contact me using my e-mail for website development projects.",
     "input": [
       "NAME","EMAIL","MESSAGE"
     ],
     "mail":"eskinderget@gmail.com",
-    "phone":"703 509 3312",
+    "phone":"XXXXXXXXXXXX",
     "button":"Send message"
   },
   "footer": {
